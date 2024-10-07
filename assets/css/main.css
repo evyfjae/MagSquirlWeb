@@ -1781,8 +1781,9 @@ input, select, textarea {
 		/* contact-container: 전체 카테고리 가로 배치 */
 		.contact-container {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-between; /* 요소 사이 간격을 동일하게 배분 */
 			margin-top: 1em;
+			flex-wrap: wrap; /* 이 부분이 필요할 경우 추가: 너무 작을 때는 줄바꿈 가능 */
 		}
 		
 		/* contact-category: 각각의 카테고리 스타일 */
