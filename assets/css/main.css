@@ -1788,8 +1788,10 @@ input, select, textarea {
 		
 		/* contact-category: 각각의 카테고리 스타일 */
 		.contact-category {
-			width: 30%; /* 3개의 카테고리를 균등하게 배분 */
+			width: 30%; /* 항목을 균등하게 배분 */
+			min-width: 250px; /* 최소 너비를 설정하여 이미지가 잘리지 않도록 함 */
 			text-align: left;
+			flex-grow: 1; /* 남는 공간을 균등하게 채우도록 설정 */
 		}
 		
 		.contact-category h3 {
