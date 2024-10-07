@@ -1782,18 +1782,20 @@ input, select, textarea {
 			ul.contact {
 				list-style: none;
 				padding-left: 0;
-				margin: 0; /* 여백 제거 */
+				margin: 0;
+				display: flex; /* Flexbox로 가로 정렬 */
+				align-items: center; /* 수직 정렬을 가운데로 맞춤 */
+				justify-content: space-between; /* 요소들 간의 간격을 자동으로 설정 */
 			}
 			
 			ul.contact li {
-				padding: 0.5em 0; /* 간격 조정 */
-				text-align: left; /* 왼쪽 정렬 */
+				padding: 0 1em; /* 요소 간 간격 조정 */
+				text-align: left; /* 텍스트 왼쪽 정렬 */
 			}
-
+			
 			ul.contact li h3 {
-				margin-bottom: 0.3em; /* 제목과 내용 간격 조정 */
+				margin-bottom: 0; /* 제목과 내용의 간격 최소화 */
 				font-size: 1.1em;
-				position: static; /* 고정된 위치 속성 해제 */
 			}
 			
 			ul.contact li p {
