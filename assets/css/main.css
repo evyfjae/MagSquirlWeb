@@ -1779,17 +1779,19 @@ input, select, textarea {
 
 /* Contact */
 
-	ul.contact {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.contact li {
-			position: relative;
-			border-top: solid 1px #ddd;
-			padding: 1.3em 0 1.3em 7em;
-		}
-
+			ul.contact {
+				list-style: none;
+				padding-left: 0;
+				display: flex; /* Flexbox를 사용하여 가로로 배치 */
+				justify-content: space-around; /* 공간을 고르게 배치 */
+			}
+			
+			ul.contact li {
+				padding: 1.3em;
+				text-align: center; /* 내용이 가운데 정렬되도록 설정 */
+				border-top: none; /* 가로 배열 시 구분선 제거 */
+			}
+			
 			ul.contact li h3 {
 				position: absolute;
 				left: 0;
